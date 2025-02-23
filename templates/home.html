@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block head_title %}
+    Home Page
+{% endblock head_title %}
+
+{% block content %}
+        <h1>{{ page_title }}</h1>
+        <p>Path vist: {{ querysets_path_count }}</p>
+        <p>Total visit: {{ total_visits }}</p>
+    {% include 'snippets/welcome-user-msg.html' %}
+{% endblock %}
